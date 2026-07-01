@@ -1,4 +1,4 @@
-const API_KEY = import.meta.env.VITE_NASA_API_KEY || baXOhZF9cL735JnNVThVd8VfjduLCu1hKdLKm88U
+const API_KEY = 'baXOhZF9cL735JnNVThVd8VfjduLCu1hKdLKm88U';[cite: 2]
 const BASE_URL = 'https://api.nasa.gov/planetary/apod';
 
 const titleEl = document.getElementById('apod-title');
@@ -30,7 +30,7 @@ async function fetchAPOD(date = '') {
   } catch (error) {
     console.error(error);
     titleEl.innerText = "Fehler im Orbit!";
-    explanationEl.innerText = "Das Bild konnte nicht geladen werden. Hast du deinen VITE_NASA_API_KEY in der .env eingetragen?";
+    explanationEl.innerText = "Das Bild konnte nicht geladen werden. Überprüfe die Internetverbindung oder den API-Key.";
   }
 }
 
