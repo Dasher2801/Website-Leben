@@ -1,4 +1,4 @@
-const API_KEY = import.meta.env.VITE_NASA_API_KEY || 'e8kkrNYqfPyGcAWWnkqaPIIkIqPtYd4AOfXHvfxb';
+const API_KEY ='bB8YPZBJP3lOyS82piaDvg8bDDmzMJasfEvn5yz9';
 const BASE_URL = 'https://api.nasa.gov/planetary/apod';
 
 const titleEl = document.getElementById('apod-title');

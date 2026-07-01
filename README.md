@@ -1,0 +1,5 @@
+# NASA Space Dashboard
+
+This project is a compact web dashboard that taps into NASA’s official APOD (Astronomy Picture of the Day) API to bring space data directly to the browser. The application automatically loads the current astronomical image or video of the day, along with its title and the accompanying scientific explanation provided by NASA researchers. An integrated calendar control allows users to "travel back in time" and search for past images, with the app dynamically reloading the data in the background.
+
+Visually, the dashboard features a purple-hued sci-fi theme that scales cleanly across both desktop and mobile devices. Technically, the app relies on a minimal setup using Vite and vanilla JavaScript, ensuring extremely fast load times without the need for heavy frameworks. Additionally, the application is configured for direct, seamless deployment to GitHub Pages via an integrated script.
