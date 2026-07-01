@@ -1,13 +1,37 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>astronomy</title> <!--put your project title here. in my case, im calling it astronomy.-->
+    <title>NASA Space Dashboard</title>
+    <link rel="stylesheet" href="/src/style.css">
   </head>
   <body>
-    <div id="app"></div>
+    <div class="dashboard-container">
+      <header>
+        <h1 id="apod-title">Lade Weltraumdaten...</h1>
+        
+        <div class="controls">
+          <label for="date-picker">Reise durch die Zeit:</label>
+          <input type="date" id="date-picker" id="date-picker">
+        </div>
+      </header>
+
+      <main class="content-card">
+        <!-- Zacken-Deko an den Seiten wie im Screenshot -->
+        <div class="border-decor left"></div>
+        
+        <div class="inner-content">
+          <div id="media-container">
+            <!-- Bild oder Video wird hier dynamisch eingefügt -->
+          </div>
+          <p id="apod-explanation">Verbindung zur NASA wird hergestellt...</p>
+        </div>
+
+        <div class="border-decor right"></div>
+      </main>
+    </div>
+
     <script type="module" src="/src/main.js"></script>
-    <img src="https://apod.nasa.gov/apod/image/2306/NGC4565_Hubble_960.jpg" alt="Astronomy Picture of the Day" />
   </body>
 </html>
