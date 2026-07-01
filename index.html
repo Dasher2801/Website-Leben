@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NASA Space Dashboard</title>
-    <script type="module" crossorigin src="/Website-Leben/assets/index-DPZed9Ig.js"></script>
-    <link rel="stylesheet" crossorigin href="/Website-Leben/assets/index-CZqQmJrd.css">
+    <!-- Ohne Schrägstrich am Anfang, damit es im Ordner bleibt -->
+    <link rel="stylesheet" href="src/style.css">
   </head>
   <body>
     <div class="dashboard-container">
@@ -14,9 +14,6 @@
         <div class="controls">
           <label for="date-picker">Reise durch die Zeit:</label>
           <input type="date" id="date-picker">
-          <link rel="stylesheet" href="/src/style.css">
-
-          <script type="module" src="/src/main.js"></script>
         </div>
       </header>
 
@@ -29,5 +26,7 @@
         <div class="border-decor right"></div>
       </main>
     </div>
+
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>
